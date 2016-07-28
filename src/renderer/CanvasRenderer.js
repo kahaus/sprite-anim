@@ -31,7 +31,7 @@ CanvasRenderer.prototype.render = function(frame, animation) {
   this.context.globalAlpha = animation.alpha;
 
   this.context.drawImage(
-    this.sprites[frame.spriteIndex],
+    this.sprites[frame.spriteIndex || 0],
     frame.x,
     frame.y,
     frame.width,
